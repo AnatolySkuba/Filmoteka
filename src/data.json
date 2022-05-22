@@ -1,0 +1,81 @@
+[
+  {
+    "id": 1,
+    "image": "https://avatars.githubusercontent.com/u/91030243?v=4",
+    "name": "Kutsyi Mykhailo",
+    "role": "Team Lead",
+    "about": "Оформлення блоку Footer та модального вікна з командою. Функціонал ApiService.",
+    "link": "https://github.com/MykhailoKutsyi"
+  },
+  {
+    "id": 2,
+    "image": "https://avatars.githubusercontent.com/u/91278187?v=4",
+    "name": "Hordienko Olga",
+    "role": "Scrum master",
+    "about": "Реалізація кнопок OnTop, OnBottom.",
+    "link": "https://github.com/HordiienkoOlha"
+  },
+  {
+    "id": 3,
+    "image": "https://avatars.githubusercontent.com/u/91738263?v=4",
+    "name": "Osadchyi Nikita",
+    "role": "Developer",
+    "about": "Оформлення та функціонал блоку Header.",
+    "link": "https://github.com/NikitaOsa7"
+  },
+  {
+    "id": 4,
+    "image": "https://avatars.githubusercontent.com/u/91505310?v=4",
+    "name": "Sugonyako Aleksey",
+    "role": "Developer",
+    "about": "Оформлення блоку Main та модального вікна з детальною інформацією фільму.",
+    "link": "https://github.com/aleksgtd"
+  },
+  {
+    "id": 5,
+    "image": "https://avatars.githubusercontent.com/u/87204570?v=4",
+    "name": "Dryzhak Nikita",
+    "role": "Developer",
+    "about": "Верстка контейнеру головної сторінки та сторінки 'My Library'.",
+    "link": "https://github.com/NikitaDryzhak"
+  },{
+    "id": 6,
+    "image": "https://avatars.githubusercontent.com/u/62342343?v=4",
+    "name": "Orlovskiy Pavlo",
+    "role": "Developer",
+    "about": "Реалізація слайдеру з популярними фільмами.",
+    "link": "https://github.com/Lorengreyn"
+  },
+  {
+    "id": 7,
+    "image": "https://avatars.githubusercontent.com/u/89809418?v=4",
+    "name": "Skuba Anatolii",
+    "role": "Developer",
+    "about": "Оформлення, реалізація темної теми та компонента Loader (spinner).",
+    "link": "https://github.com/AnatoliiSkuba"
+  },
+  {
+    "id": 8,
+    "image": "https://avatars.githubusercontent.com/u/87301129?v=4",
+    "name": "Bakush Nazar",
+    "role": "Developer",
+    "about": "Оформлення та реалізація сторінки 'My Library'. ApiLocalstorage.",
+    "link": "https://github.com/Nazkamaz"
+  },
+  {
+    "id": 9,
+    "image": "https://avatars.githubusercontent.com/u/87613282?v=4",
+    "name": "Lakhno Oleksandr",
+    "role": "Developer",
+    "about": "Додано Фавікон та сповіщення, якщо не знайдено фільм.",
+    "link": "https://github.com/OleksandrLakhno"
+  },
+  {
+    "id": 10,
+    "image": "https://avatars.githubusercontent.com/u/87891790?v=4",
+    "name": "Subotin Oleg",
+    "role": "Developer",
+    "about": "Реалізація роботи блоку Main, модального вікна картки фільму та фільтрації фільмів за жанрами. ApiLocalstorage.",
+    "link": "https://github.com/OlegSubotin"
+  }
+]

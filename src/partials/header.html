@@ -1,0 +1,69 @@
+<header class="header header-home">
+  <div class="nav__container">
+    <a href="#" class="logo">
+      <svg class="header__logo logo__animation">
+        <use href="./images/sprite.svg#main-logo" width="24px" height="24px"></use>
+      </svg>
+      <span class="header__title">Filmoteka</span>
+    </a>
+
+    <nav class="navigation">
+      <ul class="list menu">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link nav__link-home current open-home-btn"></a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link nav__link-library open-my-library-btn"></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header-buttons-library">
+    <button class="library-btn library-btn_watched"></button>
+    <button class="library-btn library-btn_queue"></button>
+  </div>
+  <form class="search" id="search-form">
+    <input class="search__input" type="text" name="searchQuery" autocomplete="off" />
+    <button type="submit" class="search__button">
+      <svg class="search__button-icon search-icon">
+        <use href="/images/sprite.svg#icon-search"></use>
+      </svg>
+    </button>
+  </form>
+
+  <div class="container switchers">
+    <!-- theme switcher -->
+    <input class="switch" type="checkbox" id="theme-check" />
+
+    <!-- language switcher -->
+    <div class="lang">
+      <svg class="currentFlag" width="21" height="14"></svg>
+
+      <ul class="lang-site">
+        <li class="lang-site__item">
+          <a href="#" id="ua" class="lang-site__link--other link">
+            <svg width="21" height="14">
+              <use href="./images/sprite.svg#flag-ua"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="lang-site__item">
+          <a href="#" id="en" class="lang-site__link--other link">
+            <svg width="21" height="14">
+              <use href="./images/sprite.svg#flag-en"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="lang-site__item">
+          <a href="#" id="pl" class="lang-site__link--other link">
+            <svg width="21" height="14">
+              <use href="./images/sprite.svg#flag-pl"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,34 @@
+.arrow {
+  display: none;
+  position: fixed;
+  right: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 19;
+}
+.arrow--up {
+  bottom: 60px;
+  @media screen and (min-width: 768px) {
+    right: 30px;
+  }
+}
+.arrow--down {
+  bottom: 20px;
+  @media screen and (min-width: 768px) {
+    right: 30px;
+  }
+}
+.arrow--show {
+  display: block;
+}
+.arrow__icon {
+  fill: $orange-color;
+  transition: $cubic;
+  width: 44px;
+  height: 44px;
+  &:hover,
+  &:focus {
+    fill: $black-color;
+  }
+}

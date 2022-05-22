@@ -1,0 +1,129 @@
+.switchers {
+  position: relative;
+}
+
+.dark-theme {
+  color: $white-color;
+  background-color: rgb(1, 1, 1);
+  background-image: url(../images/theme/stars.jpg);
+
+  .footer,
+  .js-open-modal {
+    color: $white-color;
+    background-color: $black-color;
+  }
+
+  .item-modal,
+  .item-modal__close-btn {
+    background-color: $black-color;
+  }
+
+  .item-modal__close-btn-icon {
+    fill: $white-color;
+  }
+
+  .slider-wrapper {
+    background-color: transparent;
+  }
+
+  .arrow__icon:hover,
+  .arrow__icon:focus {
+    fill: $white-color;
+  }
+
+  .modal {
+    background-color: $black-color;
+  }
+
+  .slider-card:hover {
+    box-shadow: rgb(255 255 255 / 95%) 0px 1px 20px;
+    transform: scale(1.05, 1.05);
+    transition: 350ms;
+  }
+
+  .card-item:hover {
+    box-shadow: rgb(255 255 255 / 95%) 0px 1px 20px;
+    transform: scale(1.05, 1.05);
+    transition: 350ms;
+  }
+
+  .teammate-list__item {
+    color: $white-color;
+    box-shadow: rgb(255 255 255 / 95%) 0px 1px 5px;
+    transform: scale(1, 1);
+    transition: 350ms;
+  }
+
+  .teammate-list__item:hover {
+    cursor: pointer;
+    box-shadow: rgb(255 255 255 / 95%) 0px 1px 20px;
+    transform: scale(1.05, 1.05);
+    transition: 350ms;
+  }
+
+  .teammate-list__item--icon {
+    content: url(../images/githubBlack.png);
+  }
+}
+
+.switch {
+  position: absolute;
+  right: 95px;
+  border-radius: 0.75em;
+  color: #fdea7b;
+  display: flex;
+  align-items: center;
+  margin: 0 15px 0 auto;
+  padding: 0.15em;
+  width: 3em;
+  height: 1.5em;
+  transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+  }
+
+  &:before {
+    background-color: #d7d7d7;
+    border-radius: 50%;
+    width: 1.2em;
+    height: 1.2em;
+    transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    z-index: 1;
+  }
+
+  &:after {
+    background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.15) 0) 0 50% / 50% 100%,
+      repeating-linear-gradient(90deg, #bbb 0, #bbb, #bbb 20%, #999 20%, #999 40%) 0 50% / 50% 100%,
+      radial-gradient(circle at 50% 50%, #888 25%, transparent 26%);
+    background-repeat: no-repeat;
+    border: 0.25em solid transparent;
+    border-left: 0.4em solid #d8d8d8;
+    border-right: 0 solid transparent;
+    transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+    transform: translateX(-22.5%);
+    transform-origin: 25% 50%;
+    width: 1.2em;
+    height: 1em;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:checked:before {
+    background-color: currentColor;
+    transform: translateX(125%);
+  }
+
+  &:checked:after {
+    border-left-color: currentColor;
+    transform: translateX(-2.5%) rotateY(180deg);
+  }
+}

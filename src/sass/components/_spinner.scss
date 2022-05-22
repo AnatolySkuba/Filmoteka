@@ -1,0 +1,56 @@
+.spinner {
+  --pwd: var(--wave-diameter, 248px);
+  --pwb: var(--wave-thickness, 5px);
+  --pwt: var(--wave-duration, 1.9s);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: #1a1817ea;
+  z-index: 1001;
+  transition: all var(--duration) var(--timing-function);
+  opacity: 1;
+  visibility: visible;
+
+  &.done {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+}
+
+@keyframes progresswave {
+  from {
+    border: var(--pwb) $orange-color solid;
+    width: calc(var(--pwb) * 2);
+    height: calc(var(--pwb) * 2);
+    border-radius: calc(var(--pwb) * 2);
+  }
+
+  to {
+    border: var(--pwb) rgba(0, 0, 0, 0) solid;
+    width: var(--pwd);
+    height: var(--pwd);
+    border-radius: var(--pwd);
+  }
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  animation: var(--pwt) linear infinite progresswave;
+}
+
+.spinner::after {
+  animation-delay: calc(var(--pwt) / 2);
+}

@@ -1,0 +1,105 @@
+.filters {
+    margin-top: 30px;
+}
+
+.filters__btn {
+    color: #818181;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 30%);
+    text-align: center;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 8px 15px;
+
+    &:hover {
+        background-color: $orange-color;
+        color: #fff;
+        ;
+    }
+}
+
+.filters__text {
+    text-align: center;
+    color: #818181;
+}
+
+.filters__genres-hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.filters__values {
+    color: #818181;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 30%);
+    text-align: center;
+    padding: 8px;
+}
+
+.filters__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.filters__item {
+    margin: 3px;
+}
+
+.filters__checkbox:checked+label::before {
+    content: "+";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+.filters__checkbox:checked+label {
+    border: 2px solid $orange-color;
+    background-color: $orange-color;
+    color: #fff;
+    transition: all .2s;
+}
+
+.filters__checkbox {
+    display: absolute;
+    position: absolute;
+    opacity: 0;
+}
+
+.filters__label {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: #818181;
+    border-radius: 7px;
+    white-space: nowrap;
+    margin: 3px 0px;
+    transition: all .2s;
+    padding: 8px 12px;
+    cursor: pointer;
+
+    &::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        padding: 2px 6px 2px 2px;
+        content: "-";
+        transition: transform .3s ease-in-out;
+    }
+}

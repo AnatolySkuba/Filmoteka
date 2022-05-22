@@ -1,0 +1,42 @@
+.pages-numbers-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-number-box {
+    display: flex;
+    overflow: hidden;
+}
+
+.page-number--fixed {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.btn-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 500;
+    border-width: 1px;
+        border-style: solid;
+    &:not([disabled]):hover, &:not([disabled]):focus {
+        transition: all .3s cubic-bezier(.4, 0, .2, 1);
+            border-color: #FF6B01;
+            color: #FF6B01;
+    }
+}
+
