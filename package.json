@@ -1,5 +1,5 @@
 {
-  "name": "Filmoteka",
+  "name": "filmoteka",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/AnatoliiSkuba/Filmoteka.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "JS Project Filmoteka",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AnatoliiSkuba/Filmoteka/issues"
@@ -25,5 +25,10 @@
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "axios": "^0.27.2",
+    "basiclightbox": "^5.0.4",
+    "sweetalert2": "^11.4.14"
+  }
 }
