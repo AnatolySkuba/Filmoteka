@@ -10,9 +10,7 @@ export const getTrendingMovies = page => {
 };
 
 export const getWeekTrendingMovies = () => {
-  let activeLanguage = localStorage.getItem('active-language') ? localStorage.getItem('active-language') : 'en';
-  (activeLanguage === 'ua') && (activeLanguage = 'uk');
-  const url = `${URL}trending/movie/week?api_key=${API_KEY}&language=${activeLanguage}`;
+  const url = `${URL}trending/movie/week?api_key=${API_KEY}&language=en`;
   const response = axios.get(url);
   return response;
 };

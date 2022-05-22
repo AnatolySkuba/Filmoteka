@@ -7,7 +7,7 @@ export function renderWatchedLibrary(e) {
   refsLibrary.watchedBtn.classList.add('library-btn-current');
   refsLibrary.queueBtn.classList.remove('library-btn-current');
   const libData = JSON.parse(localStorage.getItem('WatchedLibrary'));
-  console.log(libData);
+  // console.log(libData);
   if (libData===null) {
     return;
   };

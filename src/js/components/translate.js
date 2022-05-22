@@ -1,5 +1,8 @@
 import { markUp } from './header';
 import { saveLocalStorage } from './genres';
+import { renderSliderFilms } from './slider';
+
+// localStorage.clear()
 
 const languages = ['en', 'ua', 'pl'];
 
@@ -60,6 +63,7 @@ refs.listenerLanguage.addEventListener('click', function(evt) {
   onLanguageChange(selectedLanguage);
   saveLocalStorage(JSON.parse(localStorage.getItem(`genres-${selectedLanguage}`)).genres);
   markUp(JSON.parse(localStorage.getItem(`data-${selectedLanguage}`)));
+  renderSliderFilms(JSON.parse(localStorage.getItem(`slider-${selectedLanguage}`)));
   translateTextContent(selectedLanguage);
   translatePlaceholder(selectedLanguage);
 });

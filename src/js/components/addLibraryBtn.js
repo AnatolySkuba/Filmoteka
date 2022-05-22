@@ -5,7 +5,6 @@ const LOCALSTORAGE_KEY_Watched = 'WatchedLibrary';
 const LOCALSTORAGE_KEY_Queue = 'QueueLibrary';
 
 export function myLibrary(dataMovie) {
-  console.log(dataMovie);
   const btnRefs = {
     addToWatchedBtn: document.querySelector('.add-watch'),
     addToQueueBtn: document.querySelector('.add-queue'),
@@ -44,9 +43,9 @@ export function myLibrary(dataMovie) {
     e.preventDefault();
     const dataToSave = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY_Watched));
     dataToSave.push(dataMovie);
-    console.log(dataMovie);
+    // console.log(dataMovie);
     const dataToSaveString = JSON.stringify(dataToSave);
-    console.log(dataToSaveString);
+    // console.log(dataToSaveString);
     localStorage.setItem(LOCALSTORAGE_KEY_Watched, dataToSaveString);
     // console.log('addWtched done');
     watchedLibraryChange(e);
