@@ -6,6 +6,7 @@ export default function markUpFooterModal(data) {
     .map(({ id, image, name_en, name_ua, role_en, role_ua, role_pl, about_ua, about_pl, about_en, link }) => {
       let name, role, about
       (`${localStorage.getItem('active-language')}` === 'ua') && (name = name_ua, role = role_ua, about = about_ua);
+      (`${localStorage.getItem('active-language')}` === 'null') && (name = name_en, role = role_en, about = about_en);
       (`${localStorage.getItem('active-language')}` === 'en') && (name = name_en, role = role_en, about = about_en);
       (`${localStorage.getItem('active-language')}` === 'pl') && (name = name_en, role = role_pl, about = about_pl);
       return `
