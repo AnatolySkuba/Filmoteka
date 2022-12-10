@@ -3,20 +3,20 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://AnatoliiSkuba.github.io/Filmoteka",
+  "homepage": "https://AnatolySkuba.github.io/Filmoteka",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Filmoteka/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnatoliiSkuba/Filmoteka.git"
+    "url": "git+https://github.com/AnatolySkuba/Filmoteka.git"
   },
   "keywords": [],
   "author": "JS Project Filmoteka",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AnatoliiSkuba/Filmoteka/issues"
+    "url": "https://github.com/AnatolySkuba/Filmoteka/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
